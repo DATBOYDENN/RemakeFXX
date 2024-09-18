@@ -1,0 +1,112 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1e;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3b0a45;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav {
+    background-color: #292929;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3b0a45;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: #1c1c1e;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #a371e5;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #292929;
+    padding: 10px;
+    text-align: center;
+    color: #a371e5;
+}
+
+/* Section switcher */
+.content-section {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-section.active {
+    display: block;
+}
+
+
+.rounded-button {
+    background-color: #a371e5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.rounded-button:hover {
+    background-color: #3b0a45;
+    transform: scale(1.05);
+}
+
+/* Feature Image */
+.feature-image {
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+}

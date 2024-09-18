@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remake.FX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Remake</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('download')">Download</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section active">
+        <h2>Remake V3</h2>
+        <p>Remake is a VRChat Tool designed to enhance user experience with additional features like ESP, flying, and more.</p>
+
+        <!-- Download Button -->
+        <button class="rounded-button" onclick="redirectToWebsite()">Download Remake</button>
+        <p>Click the button above to download RemakeV3.</p>
+    </section>
+
+    <!-- About Section (Hidden by default) -->
+    <section id="about" class="content-section">
+        <h2>About Remake V3</h2>
+        <p>Remake V3 provides powerful tools for enhancing your VRChat experience. Below are the features included:</p>
+        <ul>
+            <li>ESP (Extra Sensory Perception)</li>
+            <li>Flying capabilities</li>
+            <li>Super Speed</li>
+            <li>Funny Features</li>
+            <li>Crashing Abilites</li>
+            <li>Esp Capsules</li>
+            <li>E1</li>
+            <li>Line Esp</li>
+            <li>Bone Esp</li>
+            <li>Bone Esp</li>
+            <li>Customizable keybinds</li>
+            <li>and More!</li>
+        </ul>
+        <h3>Features in Action:</h3>
+        <img src="menu.png" alt="ESP Feature" class="feature-image">
+        <img src="Flying.png" alt="Flying Feature" class="feature-image">
+    </section>
+
+    <!-- Contact Section (Hidden by default) -->
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out:</p>
+        <ul>
+            <li>Discord: <a href="https://discord.gg/QxjKHtnWMQ" target="_blank">RemakeFX</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Remake.FX. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+        function showPage(page) {
+
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.classList.remove('active'));
+
+
+            const selectedSection = document.getElementById(page);
+            selectedSection.classList.add('active');
+        }
+
+
+        function redirectToWebsite() {
+            window.location.href = 'https://github.com/DATBOYDENN/RemakeV3/raw/main/Remake.v3.rar'; // Replace with the actual website URL
+        }
+    </script>
+</body>
+</html>
